@@ -56,7 +56,7 @@ const Product = () => {
 
             // Send product to backend
             const response = await fetch(
-                "http://localhost:7654/cart",
+                "https://backend-c65k.onrender.com/cart",
                 {
                     method: "POST",
 
@@ -109,7 +109,7 @@ const Product = () => {
 
             // Send delete request to backend
             const response = await fetch(
-                `http://localhost:7654/cart/${itemId}`,
+                `https://backend-c65k.onrender.com/cart/${itemId}`,
                 {
                     method: "DELETE"
                 }
